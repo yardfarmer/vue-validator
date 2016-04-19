@@ -1,0 +1,568 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Validator syntax | vue-validator documentation</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-advanced-emoji/emoji-website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="./model.html" />
+    
+    
+    <link rel="prev" href="./structure.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="4"
+        data-chapter-title="Validator syntax"
+        data-filepath="syntax.md"
+        data-basepath="."
+        data-revision="Wed Apr 20 2016 00:07:46 GMT+0900 (JST)"
+        data-innerlanguage="en">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="installation.html">
+            
+                
+                    <a href="./installation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Installation
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="started.html">
+            
+                
+                    <a href="./started.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Getting started
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="structure.html">
+            
+                
+                    <a href="./structure.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Validation result structure
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="4" data-path="syntax.html">
+            
+                
+                    <a href="./syntax.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Validator syntax
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="model.html">
+            
+                
+                    <a href="./model.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        v-model integration
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="reset.html">
+            
+                
+                    <a href="./reset.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        Reset validation results
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="elements.html">
+            
+                
+                    <a href="./elements.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        Form validatable elements
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="grouping.html">
+            
+                
+                    <a href="./grouping.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        Grouping
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="errors.html">
+            
+                
+                    <a href="./errors.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        Error messages
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="events.html">
+            
+                
+                    <a href="./events.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                        Events
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11" data-path="lazy.html">
+            
+                
+                    <a href="./lazy.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                        Lazy initialization
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12" data-path="custom.html">
+            
+                
+                    <a href="./custom.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                        Custom validator
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13" data-path="timing.html">
+            
+                
+                    <a href="./timing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                        Validation timing customization
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="14" data-path="async.html">
+            
+                
+                    <a href="./async.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.</b>
+                        
+                        Async validation
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="15" data-path="api.html">
+            
+                
+                    <a href="./api.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.</b>
+                        
+                        API
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >vue-validator documentation</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="validator-syntax">Validator syntax</h1>
+<p><code>v-validate</code> directive syntax the below:</p>
+<pre><code>v-validate[:field]=&quot;array literal | object literal | binding&quot;
+</code></pre><h2 id="field">Field</h2>
+<p>In vue-validator version 2.0-alpha or earlier, validation relied on <code>v-model</code>. In 2.0-alpha and later, use the <code>v-validate</code> directive instead.</p>
+<p>~v1.4.4:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">novalidate</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">v-model</span>=<span class="hljs-value">&quot;comment&quot;</span> <span class="hljs-attribute">v-validate</span>=<span class="hljs-value">&quot;minLength: 16, maxLength: 128&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">v-show</span>=<span class="hljs-value">&quot;validation.comment.minLength&quot;</span>&gt;</span>Your comment is too short.<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">v-show</span>=<span class="hljs-value">&quot;validation.comment.maxLength&quot;</span>&gt;</span>Your comment is too long.<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;submit&quot;</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;send&quot;</span> <span class="hljs-attribute">v-if</span>=<span class="hljs-value">&quot;valid&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+</code></pre>
+<p>v2.0-alpha later:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">validator</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;validation&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">novalidate</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">v-validate:comment</span>=<span class="hljs-value">&quot;{ minlength: 16, maxlength: 128 }&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">v-show</span>=<span class="hljs-value">&quot;$validation.comment.minlength&quot;</span>&gt;</span>Your comment is too short.<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">v-show</span>=<span class="hljs-value">&quot;$validation.comment.maxlength&quot;</span>&gt;</span>Your comment is too long.<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;submit&quot;</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;send&quot;</span> <span class="hljs-attribute">v-if</span>=<span class="hljs-value">&quot;valid&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">validator</span>&gt;</span>
+</code></pre>
+<h3 id="camlcase-property">Caml-case property</h3>
+<p>As well as <a href="http://vuejs.org/guide/components.html#camelCase_vs-_kebab-case" target="_blank">Vue.js</a>, you can use the kebab-case for <code>v-validate</code> models:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">validator</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;validation&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">novalidate</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">v-validate:user-name</span>=<span class="hljs-value">&quot;{ minlength: 16 }&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">v-if</span>=<span class="hljs-value">&quot;$validation.userName.minlength&quot;</span>&gt;</span>Your user name is too short.<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">validator</span>&gt;</span>
+</code></pre>
+<h3 id="attribute">Attribute</h3>
+<p>You can specify the field name to <code>field</code> params attribute. This is useful when you need to define the validatable form elements dynamically:</p>
+<blockquote>
+<p>NOTE: the field part of <code>v-validate</code> is optional, when you use <code>field</code> params attribute</p>
+</blockquote>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;app&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">validator</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;validation&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">novalidate</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;validate-field&quot;</span> <span class="hljs-attribute">v-for</span>=<span class="hljs-value">&quot;field in fields&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">:for</span>=<span class="hljs-value">&quot;field.id&quot;</span>&gt;</span>{{field.label}}<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">:id</span>=<span class="hljs-value">&quot;field.id&quot;</span> <span class="hljs-attribute">:placeholder</span>=<span class="hljs-value">&quot;field.placeholder&quot;</span> <span class="hljs-attribute">field</span>=<span class="hljs-value">&quot;{{field.name}}&quot;</span> <span class="hljs-attribute">v-validate</span>=<span class="hljs-value">&quot;field.validate&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">pre</span>&gt;</span>{{ $validation | json }}<span class="hljs-tag">&lt;/<span class="hljs-title">pre</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">validator</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-javascript"><span class="hljs-keyword">new</span> Vue({
+  el: <span class="hljs-string">&apos;#app&apos;</span>,
+  data: {
+    fields: [{
+      id: <span class="hljs-string">&apos;username&apos;</span>,
+      label: <span class="hljs-string">&apos;username&apos;</span>,
+      name: <span class="hljs-string">&apos;username&apos;</span>,
+      placeholder: <span class="hljs-string">&apos;input your username&apos;</span>,
+      validate: { required: <span class="hljs-literal">true</span>, maxlength: <span class="hljs-number">16</span> }
+    }, {
+      id: <span class="hljs-string">&apos;message&apos;</span>,
+      label: <span class="hljs-string">&apos;message&apos;</span>,
+      name: <span class="hljs-string">&apos;message&apos;</span>,
+      placeholder: <span class="hljs-string">&apos;input your message&apos;</span>,
+      validate: { required: <span class="hljs-literal">true</span>, minlength: <span class="hljs-number">8</span> }
+    }]
+  }
+})
+</code></pre>
+<h2 id="literal">Literal</h2>
+<h3 id="array">Array</h3>
+<p>The below example uses an array literal:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">validator</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;validation&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">novalidate</span>&gt;</span>
+    Zip: <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">v-validate:zip</span>=<span class="hljs-value">&quot;[&apos;required&apos;]&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">v-if</span>=<span class="hljs-value">&quot;$validation.zip.required&quot;</span>&gt;</span>Zip code is required.<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">validator</span>&gt;</span>
+</code></pre>
+<p>Since <code>required</code> doesn&apos;t need to specify any additional rules, this syntax is preferred.</p>
+<h3 id="object">Object</h3>
+<p>The below example uses an object literal:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">validator</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;validation&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">novalidate</span>&gt;</span>
+    ID: <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">v-validate:id</span>=<span class="hljs-value">&quot;{ required: true, minlength: 3, maxlength: 16 }&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">v-if</span>=<span class="hljs-value">&quot;$validation.id.required&quot;</span>&gt;</span>ID is required<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">v-if</span>=<span class="hljs-value">&quot;$validation.id.minlength&quot;</span>&gt;</span>Your ID is too short.<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">v-if</span>=<span class="hljs-value">&quot;$validation.id.maxlength&quot;</span>&gt;</span>Your ID is too long.<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">validator</span>&gt;</span>
+</code></pre>
+<p>Object literals allow you to provide rule values. For <code>required</code>, as it doesn&apos;t need a rule value, you can specily a <strong>dummy rule</strong> instead, as shown.</p>
+<p>Alternatively, you can specify a strict object as follows:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">validator</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;validation&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">novalidate</span>&gt;</span>
+    ID: <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">v-validate:id</span>=<span class="hljs-value">&quot;{ minlength: { rule: 3 }, maxlength: { rule: 16 } }&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span> /&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">v-if</span>=<span class="hljs-value">&quot;$validation.id.minlength&quot;</span>&gt;</span>Your ID is too short.<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">v-if</span>=<span class="hljs-value">&quot;$validation.id.maxlength&quot;</span>&gt;</span>Your ID is too long.<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+</code></pre>
+<h2 id="binding">Binding</h2>
+<p>The below example uses live binding:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">new</span> Vue({
+  el: <span class="hljs-string">&apos;#app&apos;</span>,
+  data: {
+    rules: {
+      minlength: <span class="hljs-number">3</span>,
+      maxlength: <span class="hljs-number">16</span>
+    }
+  }
+})
+</code></pre>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;app&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">validator</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;validation&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">novalidate</span>&gt;</span>
+      ID: <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">v-validate:id</span>=<span class="hljs-value">&quot;rules&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">br</span> /&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">v-if</span>=<span class="hljs-value">&quot;$validation.id.minlength&quot;</span>&gt;</span>Your ID is too short.<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">v-if</span>=<span class="hljs-value">&quot;$validation.id.maxlength&quot;</span>&gt;</span>Your ID is too long.<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">validator</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+<p>You can also use computed properties or methods to retrieve rule sets, instead of a set data property.</p>
+<h2 id="using-terminal-directive-caveats">Using Terminal Directive Caveats</h2>
+<p>Note that if you need to use terminal directive like <code>v-if</code> and <code>v-for</code>, you should be wrapped the validatable target element with the non-visiblity tag like <code>&lt;template&gt;</code> tag, because when used together with these terminal directive, <code>v-validate</code> directive does not work.</p>
+<p>The below example using <code>&lt;div&gt;</code> tag:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">new</span> Vue({
+  el: <span class="hljs-string">&apos;#app&apos;</span>,
+  data: {
+    enable: <span class="hljs-literal">true</span>
+  }
+})
+</code></pre>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;app&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">validator</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;validation&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">novalidate</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;username&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">&quot;username&quot;</span>&gt;</span>username:<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;username&quot;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> 
+               @<span class="hljs-attribute">valid</span>=<span class="hljs-value">&quot;this.enable = true&quot;</span> 
+               @<span class="hljs-attribute">invalid</span>=<span class="hljs-value">&quot;this.enable = false&quot;</span> 
+               <span class="hljs-attribute">v-validate:username</span>=<span class="hljs-value">&quot;[&apos;required&apos;]&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">v-if</span>=<span class="hljs-value">&quot;enable&quot;</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;password&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">&quot;password&quot;</span>&gt;</span>password:<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;password&quot;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;password&quot;</span> <span class="hljs-attribute">v-validate:password</span>=<span class="hljs-value">&quot;{
+          required: { rule: true }, minlength: { rule: 8 }
+        }&quot;</span>/&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">validator</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./structure.html" class="navigation navigation-prev " aria-label="Previous page: Validation result structure"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="./model.html" class="navigation navigation-next " aria-label="Next page: v-model integration"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-edit-link/plugin.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-github/plugin.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"edit-link":{"base":"https://github.com/vuejs/vue-validator/tree/master/docs","label":"Edit This Page"},"github":{"url":"https://github.com/vuejs/vue-validator/"},"advanced-emoji":{"embedEmojis":false},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

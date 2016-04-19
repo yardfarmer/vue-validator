@@ -1,0 +1,844 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>API | vue-validator documentation</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-advanced-emoji/emoji-website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    
+    <link rel="prev" href="./async.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="15"
+        data-chapter-title="API"
+        data-filepath="api.md"
+        data-basepath="."
+        data-revision="Wed Apr 20 2016 00:07:46 GMT+0900 (JST)"
+        data-innerlanguage="en">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="./index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="installation.html">
+            
+                
+                    <a href="./installation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Installation
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="started.html">
+            
+                
+                    <a href="./started.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Getting started
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="structure.html">
+            
+                
+                    <a href="./structure.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Validation result structure
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="syntax.html">
+            
+                
+                    <a href="./syntax.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Validator syntax
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="model.html">
+            
+                
+                    <a href="./model.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        v-model integration
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="reset.html">
+            
+                
+                    <a href="./reset.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        Reset validation results
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="elements.html">
+            
+                
+                    <a href="./elements.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        Form validatable elements
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="grouping.html">
+            
+                
+                    <a href="./grouping.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        Grouping
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="errors.html">
+            
+                
+                    <a href="./errors.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        Error messages
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="events.html">
+            
+                
+                    <a href="./events.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                        Events
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11" data-path="lazy.html">
+            
+                
+                    <a href="./lazy.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                        Lazy initialization
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12" data-path="custom.html">
+            
+                
+                    <a href="./custom.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                        Custom validator
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13" data-path="timing.html">
+            
+                
+                    <a href="./timing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                        Validation timing customization
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="14" data-path="async.html">
+            
+                
+                    <a href="./async.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.</b>
+                        
+                        Async validation
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="15" data-path="api.html">
+            
+                
+                    <a href="./api.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>15.</b>
+                        
+                        API
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="./" >vue-validator documentation</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="api-reference">API Reference</h1>
+<h2 id="global-api">Global API</h2>
+<h3 id="vuevalidator-id-definition-">Vue.validator( id, [definition] )</h3>
+<ul>
+<li><strong>Arguments:</strong><ul>
+<li><code>{String} id</code></li>
+<li><code>{Function | Object} [definition]</code></li>
+</ul>
+</li>
+<li><p><strong>Return:</strong></p>
+<ul>
+<li>validator definition function or object</li>
+</ul>
+</li>
+<li><p><strong>Usage:</strong></p>
+<p>Register or retrieve a global validator.</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">/*
+ * Register custom validator 
+ *
+ * Arguments:
+ *   - first argument: field value
+ *   - second argument: rule value (optional). this argument is being passed from specified validator rule with v-validate
+ * Return:
+ *   `true` if valid, else return `false`
+ */</span>
+Vue.validator(<span class="hljs-string">&apos;zip&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">val, rule</span>) </span>{
+  <span class="hljs-keyword">return</span> <span class="hljs-regexp">/^\d{3}-\d{4}$/</span>.test(val)
+})
+
+<span class="hljs-comment">/*
+ * Register custom validator for async
+ * 
+ * You can use the `Promise` or promise like `function (resolve, reject)`
+ */</span>
+Vue.validator(<span class="hljs-string">&apos;exist&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">val</span>) </span>{
+  <span class="hljs-keyword">return</span> fetch(<span class="hljs-string">&apos;/validations/exist&apos;</span>, {
+    method: <span class="hljs-string">&apos;post&apos;</span>,
+    <span class="hljs-comment">// ...</span>
+  }).then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">json</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">Promise</span>.resolve() <span class="hljs-comment">// valid</span>
+  }).catch(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">error</span>) </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">Promise</span>.reject(error.message) <span class="hljs-comment">// invalid</span>
+  })
+})
+
+<span class="hljs-comment">/*
+ * Register validator definition object
+ *
+ * You need to specify the `check` custom validator function.
+ * If you need to error message, you can specify the `message` string or function together.
+ */</span>
+Vue.validator(<span class="hljs-string">&apos;email&apos;</span>, {
+  message: <span class="hljs-string">&apos;invalid email address&apos;</span>, <span class="hljs-comment">// error message</span>
+  check: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">val</span>) </span>{ <span class="hljs-comment">// custome validator</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-regexp">/^(([^&lt;&gt;()[\]\\.,;:\s@\&quot;]+(\.[^&lt;&gt;()[\]\\.,;:\s@\&quot;]+)*)|(\&quot;.+\&quot;))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/</span>.test(val)
+  }
+})
+</code></pre>
+</li>
+<li><p><strong>See also:</strong></p>
+<ul>
+<li><a href="custom.html">Custom validator</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="constructor-options">Constructor Options</h2>
+<h3 id="validators">validators</h3>
+<ul>
+<li><p><strong>Type:</strong> <code>Object</code></p>
+</li>
+<li><p><strong>Details:</strong></p>
+<p>A validator definition object to be made available to the Vue instance only.</p>
+</li>
+<li><p><strong>See also:</strong></p>
+<ul>
+<li><a href="#vuevalidator-id-definition-">Vue.validator()</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="instance-meta-methods">Instance Meta Methods</h2>
+<h3 id="activatevalidator">$activateValidator()</h3>
+<ul>
+<li><p><strong>Arguments:</strong>
+Nothing</p>
+</li>
+<li><p><strong>Usage:</strong></p>
+<p>Activate a validator that was delaying initialization with <code>lazy</code> attribute of <code>validator</code> element.</p>
+</li>
+<li><p><strong>Example:</strong></p>
+<pre><code class="lang-javascript">Vue.component(<span class="hljs-string">&apos;comment&apos;</span>, {
+  props: {
+    id: <span class="hljs-built_in">Number</span>,
+  },
+  data: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">return</span> { comment: <span class="hljs-string">&apos;&apos;</span> }
+  },
+  activate: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">done</span>) </span>{
+    <span class="hljs-keyword">var</span> resource = <span class="hljs-keyword">this</span>.$resource(<span class="hljs-string">&apos;/comments/:id&apos;</span>);
+    resource.get({ id: <span class="hljs-keyword">this</span>.id }, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">comment, stat, req</span>) </span>{
+      <span class="hljs-keyword">this</span>.commont =  comment.body
+
+      <span class="hljs-comment">// activate validator</span>
+      <span class="hljs-keyword">this</span>.$activateValidator()
+      done()
+
+    }.bind(<span class="hljs-keyword">this</span>)).error(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">data, stat, req</span>) </span>{
+      <span class="hljs-comment">// handle error ...</span>
+      done()
+    })
+  },
+  methods: {
+    onSave: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+      <span class="hljs-keyword">var</span> resource = <span class="hljs-keyword">this</span>.$resource(<span class="hljs-string">&apos;/comments/:id&apos;</span>);
+      resource.save({ id: <span class="hljs-keyword">this</span>.id }, { body: <span class="hljs-keyword">this</span>.comment }, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">data, stat, req</span>) </span>{
+        <span class="hljs-comment">// handle success</span>
+      }).error(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">data, sta, req</span>) </span>{
+        <span class="hljs-comment">// handle error</span>
+      })
+    }
+  }
+})
+</code></pre>
+</li>
+<li><p><strong>See also:</strong></p>
+<ul>
+<li><a href="lazy.html">Lazy initialization</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="resetvalidation-cb-">$resetValidation( [cb] )</h3>
+<ul>
+<li><p><strong>Arguments:</strong></p>
+<ul>
+<li><code>{Function} [cb]</code></li>
+</ul>
+</li>
+<li><p><strong>Usage:</strong></p>
+<p>Reset the validation results.</p>
+</li>
+<li><p><strong>Example:</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">new</span> Vue({
+  el: <span class="hljs-string">&apos;#app&apos;</span>,
+  methods: {
+    onClickReset: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+      <span class="hljs-keyword">this</span>.$resetValidation(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;reset done&apos;</span>)
+      })
+    }
+  }
+})
+</code></pre>
+</li>
+<li><p><strong>See also:</strong></p>
+<ul>
+<li><a href="reset.html">Reset validation results</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="setvalidationerrors-errors-">$setValidationErrors( errors )</h3>
+<ul>
+<li><p><strong>Arguments:</strong></p>
+<ul>
+<li><code>Array&lt;Object&gt;</code> errors<ul>
+<li><code>{String}</code> field</li>
+<li><code>{String}</code> message</li>
+<li><code>{String}</code> validator [optional]</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Argument: field</strong></p>
+<p>To detect as validation field error, you need to pass in <code>field</code> argument.</p>
+</li>
+<li><p><strong>Argument: message</strong></p>
+<p>To output as validation error messsage, you need to pass in <code>message</code> argument.</p>
+</li>
+<li><p><strong>Argument: validator</strong></p>
+<p>In order to detect where the validator error occurred, you pass in <code>validator</code> argument.</p>
+</li>
+<li><p><strong>Usage:</strong></p>
+<p>Set the <code>errors</code> to validation result errors. This is useful when you want to set manually some errors of server-side validation.</p>
+</li>
+<li><p><strong>Example:</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">new</span> Vue({
+  el: <span class="hljs-string">&apos;#app&apos;</span>,
+  data: {
+    id: <span class="hljs-number">1</span>,
+    username: <span class="hljs-string">&apos;&apos;</span>,
+    password: {
+      old: <span class="hljs-string">&apos;&apos;</span>,
+      <span class="hljs-keyword">new</span>: <span class="hljs-string">&apos;&apos;</span>
+    }
+  },
+  validators: {
+    confirm: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">val, target</span>) </span>{
+      <span class="hljs-keyword">return</span> val === target
+    }
+  },
+  methods: {
+    onSubmit: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+      <span class="hljs-keyword">var</span> self = <span class="hljs-keyword">this</span>
+      <span class="hljs-keyword">var</span> resource = <span class="hljs-keyword">this</span>.$resource(<span class="hljs-string">&apos;/user/:id&apos;</span>)
+      resource.save({ id: <span class="hljs-keyword">this</span>.id }, {
+        username: <span class="hljs-keyword">this</span>.username,
+        passowrd: <span class="hljs-keyword">this</span>.new
+      }, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">data, stat, req</span>) </span>{
+        <span class="hljs-comment">// something handle success ...</span>
+        <span class="hljs-comment">// ...</span>
+      }).error(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">data, stat, req</span>) </span>{
+        <span class="hljs-comment">// handle server error</span>
+        self.$setValidationErrors([
+          { field: data.field, message: data.message }
+        ])
+      })
+    }
+  }
+})
+</code></pre>
+</li>
+<li><p><strong>See also:</strong></p>
+<ul>
+<li><a href="errors.html">Error messages</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="validate-field-touched-cb-">$validate( [field], [touched], [cb] )</h3>
+<ul>
+<li><p><strong>Arguments:</strong></p>
+<ul>
+<li><code>{String} [field]</code></li>
+<li><code>{Boolean} [touched]</code></li>
+<li><code>{Function} [cb]</code></li>
+</ul>
+</li>
+<li><p><strong>Usage:</strong></p>
+<p>Validate the target formalable element fields. </p>
+<ul>
+<li><p>If no <code>field</code> argument, validate the all fields;</p>
+</li>
+<li><p>If <code>touched</code> argument pass to <code>true</code>, <code>trouched</code> of validation result set <code>true</code>;</p>
+</li>
+</ul>
+</li>
+<li><p><strong>Example:</strong></p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">new</span> Vue({
+  el: <span class="hljs-string">&apos;#app&apos;</span>,
+  data: { password: <span class="hljs-string">&apos;&apos;</span> },
+  validators: {
+    confirm: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">val, target</span>) </span>{
+      <span class="hljs-keyword">return</span> val === target
+    }
+  },
+  methods: {
+    onSubmit: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">e</span>) </span>{
+      <span class="hljs-comment">// validate the all fields manually with touched</span>
+      <span class="hljs-keyword">this</span>.$validate(<span class="hljs-literal">true</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;validate done !!&apos;</span>)
+      })
+
+      <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.$validation.invalid) {
+        e.preventDefault()
+      }
+    }
+  }
+})
+</code></pre>
+</li>
+<li><p><strong>See also:</strong></p>
+<ul>
+<li><a href="timing.html">Validation timing customization</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="directives">Directives</h2>
+<h3 id="vvalidate">v-validate</h3>
+<ul>
+<li><p><strong>Expects:</strong> <code>Array | Object</code></p>
+</li>
+<li><p><strong>Param Attributes:</strong></p>
+<ul>
+<li><code>group</code></li>
+<li><code>field</code></li>
+<li><code>detect-blur</code></li>
+<li><code>detect-change</code></li>
+<li><code>initial</code></li>
+</ul>
+</li>
+<li><p><strong>Usage:</strong></p>
+<p>Validate form element. For detailed usage, the following the above examples.</p>
+</li>
+<li><p><strong>Example:</strong></p>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- array syntax --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">v-validate:username</span>=<span class="hljs-value">&quot;[&apos;required&apos;]&quot;</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- object syntax --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">v-validate:zip</span>=<span class="hljs-value">&quot;{ required: true, pattern: { rule: &apos;/^\d{3}-\d{4}$/&apos;, message: &apos;invalid zip pattern&apos; }}&quot;</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- binding --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">v-validate:zip</span>=<span class="hljs-value">&quot;zipRule&quot;</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- grouping --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">group</span>=<span class="hljs-value">&quot;profile&quot;</span> <span class="hljs-attribute">v-validate:user</span>=<span class="hljs-value">&quot;[&apos;required&apos;]&quot;</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- field --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">filed</span>=<span class="hljs-value">&quot;field1&quot;</span> <span class="hljs-attribute">v-validate</span>=<span class="hljs-value">&quot;[&apos;required&apos;]&quot;</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- disable validation with DOM event --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;password&quot;</span> <span class="hljs-attribute">detect-blur</span>=<span class="hljs-value">&quot;off&quot;</span> <span class="hljs-attribute">detect-change</span>=<span class="hljs-value">&quot;off&quot;</span> <span class="hljs-attribute">v-validate:password</span>=<span class="hljs-value">&quot;[&apos;required&apos;]&quot;</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- disable initial auto-validation --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">initial</span>=<span class="hljs-value">&quot;off&quot;</span> <span class="hljs-attribute">v-validate:message</span>=<span class="hljs-value">&quot;[&apos;required&apos;]&quot;</span>&gt;</span>
+</code></pre>
+</li>
+<li><p><strong>See also:</strong></p>
+<ul>
+<li><a href="syntax.html">Validator syntax</a></li>
+<li><a href="grouping.html">Grouping</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="model.html">v-model integration</a></li>
+<li><a href="timing.html">Validation timing customization</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="special-elements">Special Elements</h2>
+<h3 id="validator">validator</h3>
+<ul>
+<li><p><strong>Attributes:</strong></p>
+<ul>
+<li><code>name</code> (required)</li>
+<li><code>groups</code></li>
+<li><code>lazy</code></li>
+</ul>
+</li>
+<li><p><strong>Usage:</strong></p>
+<p><code>&lt;validator&gt;</code> elements serve as validation in formable (input, select and textarea) elements. The <code>&lt;validator&gt;</code> element itself will be replaced.</p>
+<p>The validation results keep to scope name prefixed with <code>$</code>, specified by the <code>name</code> attribute of the <code>&lt;validator&gt;</code> element.</p>
+</li>
+</ul>
+<blockquote>
+<p><img align="absmiddle" alt=":warning:" class="emoji" src="gitbook/plugins/gitbook-plugin-advanced-emoji/emojis/warning.png" title=":warning:"> Like <code>$event</code>, If you specified the validator name that are used with vue.js, it may not work.</p>
+</blockquote>
+<ul>
+<li><p><strong>Example:</strong></p>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- basic --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">validator</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;validation&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">v-validate:username</span>=<span class="hljs-value">&quot;[&apos;required&apos;]&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">v-if</span>=<span class="hljs-value">&quot;$validation.invalid&quot;</span>&gt;</span>invalid !!<span class="hljs-tag">&lt;<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">validator</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- validation grouping --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">validator</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;validation&quot;</span> <span class="hljs-attribute">:groups</span>=<span class="hljs-value">&quot;[&apos;user&apos;, &apos;password&apos;]&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">&quot;username&quot;</span>&gt;</span>username:<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">group</span>=<span class="hljs-value">&quot;user&quot;</span> <span class="hljs-attribute">v-validate:username</span>=<span class="hljs-value">&quot;[&apos;required&apos;]&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">&quot;password&quot;</span>&gt;</span>password:<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;password&quot;</span> <span class="hljs-attribute">group</span>=<span class="hljs-value">&quot;password&quot;</span> <span class="hljs-attribute">v-validate:password1</span>=<span class="hljs-value">&quot;{ minlength: 8, required: true }&quot;</span>/&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">&quot;confirm&quot;</span>&gt;</span>password (confirm):<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;password&quot;</span> <span class="hljs-attribute">group</span>=<span class="hljs-value">&quot;password&quot;</span> <span class="hljs-attribute">v-validate:password2</span>=<span class="hljs-value">&quot;{ minlength: 8, required: true }&quot;</span>/&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">v-if</span>=<span class="hljs-value">&quot;$validation.user.invalid&quot;</span>&gt;</span>Invalid yourname !!<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">p</span> <span class="hljs-attribute">v-if</span>=<span class="hljs-value">&quot;$validation.password.invalid&quot;</span>&gt;</span>Invalid password input !!<span class="hljs-tag">&lt;/<span class="hljs-title">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">validator</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- lazy initialization --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">validator</span> <span class="hljs-attribute">lazy</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;validation&quot;</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">:value</span>=<span class="hljs-value">&quot;comment&quot;</span> <span class="hljs-attribute">v-validate:comment</span>=<span class="hljs-value">&quot;{ required: true, maxlength: 256 }&quot;</span>/&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">v-if</span>=<span class="hljs-value">&quot;$validation.comment.required&quot;</span>&gt;</span>Required your comment<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">v-if</span>=<span class="hljs-value">&quot;$validation.comment.maxlength&quot;</span>&gt;</span>Too long comment !!<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;button&quot;</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">&quot;save&quot;</span> @<span class="hljs-attribute">click</span>=<span class="hljs-value">&quot;onSave&quot;</span> <span class="hljs-attribute">v-if</span>=<span class="hljs-value">&quot;valid&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">validator</span>&gt;</span>
+</code></pre>
+</li>
+<li><p><strong>See also:</strong></p>
+<ul>
+<li><a href="structure.html">Validation result structure</a></li>
+<li><a href="grouping.html">Grouping</a></li>
+<li><a href="lazy.html">Lazy initialization</a></li>
+<li><a href="timing.html">Validation timing customization</a></li>
+<li><a href="async.html">Async validation</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="validatorerrors">validator-errors</h3>
+<ul>
+<li><p><strong>Attributes:</strong></p>
+<ul>
+<li><code>validation</code> (required with v-bind)</li>
+<li><code>component</code></li>
+<li><code>partial</code></li>
+<li><code>group</code></li>
+<li><code>field</code></li>
+</ul>
+</li>
+<li><p><strong>Usage:</strong></p>
+<p><code>&lt;validator-errors&gt;</code> elements serve as outlets for validation error message template. The <code>&lt;validator-errors&gt;</code>element itself will be replaced with validator internal default template. If you are specified with <code>component</code> attribute or <code>partial</code> attribute, validation error message rendered it.</p>
+</li>
+<li><p><strong>Example:</strong></p>
+<pre><code class="lang-html"><span class="hljs-comment">&lt;!-- basic --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">validator</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;validation&quot;</span>&gt;</span>
+  ...
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;errors&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">validator-errors</span> <span class="hljs-attribute">:validation</span>=<span class="hljs-value">&quot;$validation&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">validator-errors</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">validator</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- render validation error message with component --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">validator</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;validation&quot;</span>&gt;</span>
+  ...
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;errors&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">validator-errors</span> <span class="hljs-attribute">:component</span>=<span class="hljs-value">&quot;&apos;custom-error&apos;&quot;</span> <span class="hljs-attribute">:validation</span>=<span class="hljs-value">&quot;$validation&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">validator-errors</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">validator</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- render validation error message with partial --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">validator</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;validation&quot;</span>&gt;</span>
+  ...
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;errors&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">validator-errors</span> <span class="hljs-attribute">partial</span>=<span class="hljs-value">&quot;myErrorTemplate&quot;</span> <span class="hljs-attribute">:validation</span>=<span class="hljs-value">&quot;$validation&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">validator-errors</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">validator</span>&gt;</span>
+
+<span class="hljs-comment">&lt;!-- error message filter with group --&gt;</span>  
+<span class="hljs-tag">&lt;<span class="hljs-title">validator</span> <span class="hljs-attribute">:groups</span>=<span class="hljs-value">&quot;[&apos;profile&apos;, &apos;password&apos;]&quot;</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">&quot;validation1&quot;</span>&gt;</span>
+  ...
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;username&quot;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text&quot;</span> <span class="hljs-attribute">group</span>=<span class="hljs-value">&quot;profile&quot;</span> <span class="hljs-attribute">v-validate:username</span>=<span class="hljs-value">&quot;{
+    required: { rule: true, message: &apos;required you name !!&apos; }
+  }&quot;</span>&gt;</span>
+  ...
+  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">&quot;old&quot;</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;password&quot;</span> <span class="hljs-attribute">group</span>=<span class="hljs-value">&quot;password&quot;</span> <span class="hljs-attribute">v-validate:old</span>=<span class="hljs-value">&quot;{
+    required: { rule: true, message: &apos;required you old password !!&apos; },
+    minlength: { rule: 8, message: &apos;your old password short too !!&apos; }
+  }&quot;</span>/&gt;</span>
+  ...
+  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">&quot;errors&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">validator-errors</span> <span class="hljs-attribute">group</span>=<span class="hljs-value">&quot;profile&quot;</span> <span class="hljs-attribute">:validation</span>=<span class="hljs-value">&quot;$validation1&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">validator-errors</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">validator</span>&gt;</span>
+</code></pre>
+</li>
+<li><p><strong>See also:</strong></p>
+<ul>
+<li><a href="errors.html">Error messages</a></li>
+</ul>
+</li>
+</ul>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="./async.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Async validation"><i class="fa fa-angle-left"></i></a>
+        
+        
+    </div>
+</div>
+
+        
+<script src="gitbook/app.js"></script>
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-edit-link/plugin.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-github/plugin.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"edit-link":{"base":"https://github.com/vuejs/vue-validator/tree/master/docs","label":"Edit This Page"},"github":{"url":"https://github.com/vuejs/vue-validator/"},"advanced-emoji":{"embedEmojis":false},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":false,"twitter":false,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
